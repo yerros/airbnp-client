@@ -1,6 +1,6 @@
 import axios from "axios";
 import moment from "moment";
-export const BaseUrl = "http://localhost:5050/";
+export const BaseUrl = "https://backend-airbnp.herokuapp.com/";
 
 const setHeader = () => {
   const token = localStorage.getItem("token");
