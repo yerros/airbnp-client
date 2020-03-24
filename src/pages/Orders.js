@@ -31,7 +31,6 @@ export default class Orders extends Component {
                 <th scope="col" style={{ width: "8%" }}>
                   #
                 </th>
-                <th scope="col">Client</th>
                 <th scope="col">Property</th>
                 <th scope="col">Amount</th>
                 <th scope="col">Order Date</th>
