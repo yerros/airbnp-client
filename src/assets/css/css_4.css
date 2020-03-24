@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Libre Franklin Thin'), local('LibreFranklin-Thin'), url(../fonts/jizBREVItHgc8qDIbSTKq4XkRi186zUTiw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Libre Franklin ExtraLight'), local('LibreFranklin-ExtraLight'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi3Q-iI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Libre Franklin Light'), local('LibreFranklin-Light'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi20-SI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(../fonts/jizDREVItHgc8qDIbSTKq4XkRiUf2zI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Libre Franklin Medium'), local('LibreFranklin-Medium'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi3s-CI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Libre Franklin SemiBold'), local('LibreFranklin-SemiBold'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi3A_yI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Libre Franklin Bold'), local('LibreFranklin-Bold'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi2k_iI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Libre Franklin ExtraBold'), local('LibreFranklin-ExtraBold'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi24_SI0q14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Libre Franklin Black'), local('LibreFranklin-Black'), url(../fonts/jizAREVItHgc8qDIbSTKq4XkRi2c_CI0q14.ttf) format('truetype');
+}
