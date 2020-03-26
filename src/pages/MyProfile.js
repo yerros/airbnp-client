@@ -34,7 +34,7 @@ class MyProfile extends Component {
     });
   };
   render() {
-    const { firstname, lastname, email } = this.state;
+    const { firstname, lastname } = this.state;
     return (
       <LayoutAccount>
         <div className="container">

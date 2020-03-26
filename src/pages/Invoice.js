@@ -52,6 +52,7 @@ export default class Invoice extends Component {
             className="text-underline text-primary"
           >
             <img
+              alt="payment"
               style={{ maxWidth: 200 }}
               src="https://ridgechristian.info/wp-content/uploads/2016/09/Click-to-Pay.jpg"
             />
@@ -62,7 +63,7 @@ export default class Invoice extends Component {
   };
 
   render() {
-    const { _id, amount, payment_method, status } = this.state.order;
+    const { _id, amount, status } = this.state.order;
     const { city, country, phone } = this.state.order.billing || "";
     const { firstname, lastname, email } = this.state.order.guest || "";
     const { title, images, address } = this.state.order.property || "";

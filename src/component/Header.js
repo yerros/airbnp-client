@@ -4,7 +4,14 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { signOut, removeCart } from "../actions";
 import { Link } from "react-router-dom";
+import * as serviceWorker from "../worker";
 import Login from "./Login";
+
+const runServiceWorker = () => {
+  if ("serviceWorker" in navigator) {
+    serviceWorker.send().catch(err => console.error(err));
+  }
+};
 
 function Header(props) {
   const [cart, setCart] = useState(false);
@@ -17,6 +24,7 @@ function Header(props) {
       data-header-fix-moment={500}
       data-header-fix-effect="slide"
     >
+      {props.isLogin ? runServiceWorker() : null}
       <div className="u-header__section u-header__shadow-on-show-hide py-4 py-xl-0">
         <div className="container-fluid u-header__hide-content u-header__topbar u-header__topbar-lg border-bottom border-color-8">
           <div className="d-flex align-items-center">
@@ -40,6 +48,17 @@ function Header(props) {
             </ul>
             <div className="ml-auto d-flex align-items-center">
               <ul className="list-inline mb-0 mr-2 pr-1">
+                <li className="list-inline-item">
+                  <a
+                    type="button"
+                    className="btn btn-xs btn-icon btn-pill btn-soft-dark btn-bg-transparent transition-3d-hover"
+                    onClick={serviceWorker.askUserPermission}
+                    rel="noopener noreferrer"
+                  >
+                    <span className="fab fa-youtube btn-icon__inner" />
+                  </a>
+                </li>
+
                 <li className="list-inline-item">
                   <a
                     className="btn btn-xs btn-icon btn-pill btn-soft-dark btn-bg-transparent transition-3d-hover"
@@ -370,6 +389,7 @@ function Header(props) {
 const mapStateToProps = state => {
   return {
     user: state.userReducer,
+    isLogin: state.userReducer.isLogin,
     cart: state.cart
   };
 };

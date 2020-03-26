@@ -171,8 +171,6 @@ class Property extends Component {
     const {
       showForm,
       showTable,
-      lat,
-      lng,
       showMap,
       images,
       categories,

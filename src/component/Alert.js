@@ -5,9 +5,6 @@ import { deleteAlert } from "../actions";
 
 const Alert = props => {
   const { alerts } = props;
-  const clear = () => {
-    props.delete();
-  };
   if (alerts !== null && alerts.length > 0) {
     let alertList;
 

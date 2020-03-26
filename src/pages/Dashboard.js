@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import moment from "moment";
 import LayoutAccount from "../component/LayoutAccount";
-import { Get, month, yesterday, year, today, threeMount } from "../config";
+import { Get, month, yesterday, year, threeMount } from "../config";
 
 export default class Dashboard extends Component {
   constructor() {
@@ -80,7 +80,6 @@ export default class Dashboard extends Component {
   }
 
   render() {
-    const { this_month, last_3_month, this_year, total } = this.state;
     return (
       <LayoutAccount>
         <div className="container">

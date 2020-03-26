@@ -56,7 +56,7 @@ export default class Orders extends Component {
                   status = "danger";
                 }
                 return (
-                  <tr>
+                  <tr key={i}>
                     <th scope="row">
                       <span className="btn btn-sm btn-icon btn-soft-secondary rounded-circle mr-2">
                         <span className="btn-icon__inner font-weight-medium">

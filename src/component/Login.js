@@ -1,6 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0, jsx-a11y/alt-text:0 */
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
 
 import { Post } from "../config";
 
