@@ -1,7 +1,7 @@
 /* eslint jsx-a11y/anchor-is-valid: 0, jsx-a11y/alt-text:0 */
 import React, { Component } from "react";
 
-import { Post } from "../config";
+import { Post, BaseUrl } from "../config";
 
 export default class Login extends Component {
   constructor() {
@@ -353,8 +353,7 @@ export default class Login extends Component {
                   <button
                     type="button"
                     onClick={() =>
-                      (window.location.href =
-                        "http://localhost:5050/auth/facebook")
+                      (window.location.href = `${BaseUrl}auth/facebook`)
                     }
                     className="btn btn-block btn-sm btn-facebook transition-3d-hover"
                     href="#"
@@ -366,8 +365,7 @@ export default class Login extends Component {
                     type="button"
                     className="btn btn-block btn-sm btn-google transition-3d-hover ml-5 mt-0"
                     onClick={() =>
-                      (window.location.href =
-                        "http://localhost:5050/auth/google")
+                      (window.location.href = `${BaseUrl}auth/google`)
                     }
                   >
                     <span className="fab fa-google mr-2" />
