@@ -10,7 +10,7 @@
     "axios": "^0.19.2",
     "date-fns": "^2.11.0",
     "google-maps-react": "^2.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.13.1",
     "react-bootstrap-sweetalert": "^5.1.9",
     "react-country-region-selector": "^1.4.7",
